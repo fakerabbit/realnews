@@ -91,7 +91,7 @@ NSString * const kBNNewsVCBackHandlerKey = @"news vc back handler";
         NSString* title1 = [NSString stringWithFormat: @"\n<h2>%@:</h2>\n", _articleTitle];
         NSString* content1 = _articleDesc;
         NSString* pageLink = [NSString stringWithFormat: @"<p><br/>%@</p><br/>", _articleUrl];
-        NSString* iTunesLink = [NSString stringWithFormat: @"<a href=\"http://itunes.apple.com/WebObjects/MZStore.woa/wa/viewSoftware?id=329937374&mt=8\">Barcelona News</a>"]; // replate it with App's link
+        NSString* iTunesLink = [NSString stringWithFormat: @"<a href=\"http://itunes.apple.com/us/app/madrid-news/id711014720?ls=1&mt=8\">Madrid News</a>"]; // replate it with App's link
         NSString* emailBody =
         [NSString stringWithFormat:@"%@ %@ %@ %@", title1, content1, pageLink, iTunesLink];
         
