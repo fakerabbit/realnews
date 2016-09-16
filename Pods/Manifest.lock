@@ -1,0 +1,27 @@
+PODS:
+  - Mantle (2.0.7):
+    - Mantle/extobjc (= 2.0.7)
+  - Mantle/extobjc (2.0.7)
+  - Ono (1.2.2)
+  - RSSAtomKit (0.1.1):
+    - Mantle (~> 2.0)
+    - Ono (~> 1.2)
+
+DEPENDENCIES:
+  - RSSAtomKit (from `https://github.com/chrisballinger/RSSAtomKit.git`)
+
+EXTERNAL SOURCES:
+  RSSAtomKit:
+    :git: https://github.com/chrisballinger/RSSAtomKit.git
+
+CHECKOUT OPTIONS:
+  RSSAtomKit:
+    :commit: 0a65fd9a57ef51dafaaeb6d695c8ff9153f0508a
+    :git: https://github.com/chrisballinger/RSSAtomKit.git
+
+SPEC CHECKSUMS:
+  Mantle: bc40bb061d8c2c6fb48d5083e04d928c3b7f73d9
+  Ono: 80b1c686777d3f6d5d5ce6fcac8a74afef4ca197
+  RSSAtomKit: 4c57701c961e044555e793283455b39e44ceeb9f
+
+COCOAPODS: 0.39.0

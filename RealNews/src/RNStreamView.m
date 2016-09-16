@@ -11,6 +11,8 @@
 #import "RNImages.h"
 #import "RNTheme.h"
 #import "RNStreamViewCell.h"
+#import "RSSAtomKit.h"
+#import "RSSPerson.h"
 
 @interface RNStreamView (Private)
 -(void)onMenuButton;
@@ -320,15 +322,51 @@ NSString * const kBNStreamViewMenuCell       = @"StreamView CV Cell";
 
 - (BOOL)parseURL:(NSString*)sURL {
     BOOL result = YES;
+    __block BOOL wr = result;
 	// Load and parse an xml string
-	_tbxml = [[TBXML alloc] initWithURL:[NSURL URLWithString:sURL]];
+	/*_tbxml = [[TBXML alloc] initWithURL:[NSURL URLWithString:sURL]];
 	
 	// If TBXML found a root node, process element and iterate all children
 	if (_tbxml.rootXMLElement) {
 		[self traverseElement: _tbxml.rootXMLElement];
     }
     else
-        result = NO;
+        result = NO;*/
+    dispatch_queue_t reloadQueue = dispatch_queue_create("com.RealNews.timerQueue", DISPATCH_QUEUE_SERIAL);
+    RSSAtomKit *atomKit = [[RSSAtomKit alloc] initWithSessionConfiguration:[NSURLSessionConfiguration ephemeralSessionConfiguration]];
+    NSURL *nytimesURL = [NSURL URLWithString: sURL];
+    [atomKit parseFeedFromURL:nytimesURL completionBlock:^(RSSFeed *feed, NSArray *items, NSError *error) {
+        if (error) {
+            NSLog(@"Error for %@: %@", nytimesURL, error);
+            wr = NO;
+        }
+        //NSLog(@"feed: %@ items: %@", feed, items);
+        for (int i=0; i<[items count]; i++) {
+            RSSItem * item = [items objectAtIndex:i];
+            _currentItem = [NSMutableDictionary dictionary];
+            [_currentItem setObject: [NSMutableString string] forKey: @"title"];
+            [_currentItem setObject: [NSMutableString string] forKey: @"link"];
+            [_currentItem setObject: [NSMutableString string] forKey: @"description"];
+            [_currentItem setObject: [NSMutableString string] forKey: @"pubDate"];
+            [_currentItem setObject: [NSMutableString string] forKey: @"author"];
+            [_currentItem setObject: [NSMutableString string] forKey: @"enclosure"];
+            
+            RSSPerson * author = item.author;
+            
+            [[_currentItem objectForKey: @"title"] appendString: item.title == nil ? @"title" : item.title];
+            [[_currentItem objectForKey: @"link"] appendString: item.linkURL == nil ? @"url" : item.linkURL.absoluteString];
+            [[_currentItem objectForKey: @"description"] appendString: item.itemDescription == nil ? @"description" : item.itemDescription];
+            [[_currentItem objectForKey: @"pubDate"] appendString: item.publicationDate == nil ? @"date" : [NSDateFormatter localizedStringFromDate:item.publicationDate dateStyle:NSDateFormatterShortStyle timeStyle:NSDateFormatterFullStyle]];
+            [[_currentItem objectForKey: @"author"] appendString: author.name == nil ? @"Anonymous" : author.name];
+            [[_currentItem objectForKey: @"enclosure"] appendString: @""];
+            
+            [_allEntries addObject: _currentItem];
+            
+            _currentItem = nil;
+            _currentElement = nil;
+        }
+        [_feedsCv reloadData];
+    } completionQueue: nil];
     
     return result;
 }
