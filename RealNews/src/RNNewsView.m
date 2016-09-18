@@ -150,12 +150,15 @@ NSString * const kBNNewsViewTwitterHandlerKey  = @"news view twitter handler";
 #pragma mark - UIWebViewDelegate Methods
 
 - (void)webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error {
-    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error"
-                                                    message:@"An error occurred, please check your internet connection."
-                                                   delegate:nil
-                                          cancelButtonTitle:@"OK"
-                                          otherButtonTitles:nil];
-    [alert show];
+    //NSLog(@"error: %ld", (long)error.code);
+    if (error.code == -1001) {
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error"
+                                                        message:@"An error occurred, please check your internet connection."
+                                                       delegate:nil
+                                              cancelButtonTitle:@"OK"
+                                              otherButtonTitles:nil];
+        [alert show];
+    }
 }
 
 - (void)webViewDidStartLoad:(UIWebView *)webView {

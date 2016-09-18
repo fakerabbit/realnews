@@ -231,8 +231,8 @@ CGFloat const kBNMenuVCLeftSlideoutMenuPaddingRight      = 38.f;
                kRNKeySourceUrl: @[@"http://feeds.feedburner.com/mundodeportivo-realmadrid"]},
              @{kRNKeySourceTitle: @"Sport",
                kRNKeySourceUrl: @[@"http://www.sport.es/es/rss/liga-bbva/rss.xml"]},
-             @{kRNKeySourceTitle: @"El Pais",
-               kRNKeySourceUrl: @[@"http://elpais.com/tag/rss/liga_espanola_de_futbol/a"]},
+             /*@{kRNKeySourceTitle: @"El Pais",
+               kRNKeySourceUrl: @[@"http://elpais.com/tag/rss/liga_espanola_de_futbol/a"]},*/
              @{kRNKeySourceTitle: @"20 Minutos",
                kRNKeySourceUrl: @[@"http://www.20minutos.es/rss/especial/futbol/"]},
              @{kRNKeySourceTitle: @"Fichajes",
@@ -242,9 +242,9 @@ CGFloat const kBNMenuVCLeftSlideoutMenuPaddingRight      = 38.f;
              @{kRNKeySourceTitle: @"El Periódico",
                kRNKeySourceUrl: @[@"http://www.elperiodico.com/es/rss/galleries/deportes/rss.xml"]},
              @{kRNKeySourceTitle: @"europapress",
-               kRNKeySourceUrl: @[@"http://www.europapress.es/rss/rss.aspx?ch=162"]},
-             @{kRNKeySourceTitle: @"La Vanguardia",
-               kRNKeySourceUrl: @[@"http://www.lavanguardia.com/feed/deportes/futbol/index.xml"]}
+               kRNKeySourceUrl: @[@"http://www.europapress.es/rss/rss.aspx?ch=162"]}
+             /*@{kRNKeySourceTitle: @"La Vanguardia",
+               kRNKeySourceUrl: @[@"http://www.lavanguardia.com/feed/deportes/futbol/index.xml"]}*/
              ];
 }
 

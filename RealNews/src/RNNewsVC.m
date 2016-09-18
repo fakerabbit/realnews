@@ -44,6 +44,7 @@ NSString * const kBNNewsVCBackHandlerKey = @"news vc back handler";
     [super loadView];
     
     _cview = [[RNNewsView alloc] initWithFrame: [UIScreen mainScreen].bounds];
+    //NSLog(@"_articleUrl: %@", _articleUrl);
     _cview.articleUrl = _articleUrl;
     
     __block typeof(self) s = self;
