@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AB0BAAD8F1347EFF7EBDE67F /* libPods-RealNews.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 646CC55733B2C89A36DA0419 /* libPods-RealNews.a */; };
+		69E8AF632FACB802FEE2966B /* libPods-RealNews.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 74BB03B1CDA99D9962397275 /* libPods-RealNews.a */; };
 		AC456F5D17EA46B2007DF01C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC456F5C17EA46B2007DF01C /* Foundation.framework */; };
 		AC456F5F17EA46B2007DF01C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC456F5E17EA46B2007DF01C /* CoreGraphics.framework */; };
 		AC456F6117EA46B2007DF01C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC456F6017EA46B2007DF01C /* UIKit.framework */; };
@@ -56,9 +56,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0E7BCBE6142AE14A801061AB /* Pods-RealNews.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealNews.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RealNews/Pods-RealNews.debug.xcconfig"; sourceTree = "<group>"; };
-		2B75D49D2B2733F66D87C354 /* Pods-RealNews.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealNews.release.xcconfig"; path = "Pods/Target Support Files/Pods-RealNews/Pods-RealNews.release.xcconfig"; sourceTree = "<group>"; };
-		646CC55733B2C89A36DA0419 /* libPods-RealNews.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RealNews.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		16F6D446DBA81C52C24684A4 /* Pods-RealNews.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealNews.release.xcconfig"; path = "Pods/Target Support Files/Pods-RealNews/Pods-RealNews.release.xcconfig"; sourceTree = "<group>"; };
+		74BB03B1CDA99D9962397275 /* libPods-RealNews.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RealNews.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC456F5917EA46B2007DF01C /* RealNews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RealNews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC456F5C17EA46B2007DF01C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		AC456F5E17EA46B2007DF01C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -115,6 +114,7 @@
 		AC456FCF17EA5F0E007DF01C /* RNSocialView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RNSocialView.h; path = src/RNSocialView.h; sourceTree = "<group>"; };
 		AC456FD017EA5F0E007DF01C /* RNSocialView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RNSocialView.m; path = src/RNSocialView.m; sourceTree = "<group>"; };
 		AC734B121D8AF0AC00C784C9 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		DA2ABF3477775C1CBAF65A8A /* Pods-RealNews.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealNews.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RealNews/Pods-RealNews.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,7 +129,7 @@
 				AC456F5F17EA46B2007DF01C /* CoreGraphics.framework in Frameworks */,
 				AC456F6117EA46B2007DF01C /* UIKit.framework in Frameworks */,
 				AC456F5D17EA46B2007DF01C /* Foundation.framework in Frameworks */,
-				AB0BAAD8F1347EFF7EBDE67F /* libPods-RealNews.a in Frameworks */,
+				69E8AF632FACB802FEE2966B /* libPods-RealNews.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -146,15 +146,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		873BF95EA3EE5CCF00FD094F /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				0E7BCBE6142AE14A801061AB /* Pods-RealNews.debug.xcconfig */,
-				2B75D49D2B2733F66D87C354 /* Pods-RealNews.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 		AC456F5017EA46B2007DF01C = {
 			isa = PBXGroup;
 			children = (
@@ -163,7 +154,7 @@
 				AC456F7B17EA46B2007DF01C /* RealNewsTests */,
 				AC456F5B17EA46B2007DF01C /* Frameworks */,
 				AC456F5A17EA46B2007DF01C /* Products */,
-				873BF95EA3EE5CCF00FD094F /* Pods */,
+				AD9958928B99CC4B824AF4F5 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -187,7 +178,7 @@
 				AC456F5E17EA46B2007DF01C /* CoreGraphics.framework */,
 				AC456F6017EA46B2007DF01C /* UIKit.framework */,
 				AC456F7517EA46B2007DF01C /* XCTest.framework */,
-				646CC55733B2C89A36DA0419 /* libPods-RealNews.a */,
+				74BB03B1CDA99D9962397275 /* libPods-RealNews.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -347,6 +338,15 @@
 			name = "html+";
 			sourceTree = "<group>";
 		};
+		AD9958928B99CC4B824AF4F5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DA2ABF3477775C1CBAF65A8A /* Pods-RealNews.debug.xcconfig */,
+				16F6D446DBA81C52C24684A4 /* Pods-RealNews.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -354,12 +354,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AC456F8517EA46B2007DF01C /* Build configuration list for PBXNativeTarget "RealNews" */;
 			buildPhases = (
-				9DD638243BA53F650A9F6CDF /* Check Pods Manifest.lock */,
+				7FFE490E54B2816A70B3BD75 /* [CP] Check Pods Manifest.lock */,
 				AC456F5517EA46B2007DF01C /* Sources */,
 				AC456F5617EA46B2007DF01C /* Frameworks */,
 				AC456F5717EA46B2007DF01C /* Resources */,
-				8A9DC284B203B509D7DEF536 /* Embed Pods Frameworks */,
-				98D40EFD383B92E26A07C8DB /* Copy Pods Resources */,
+				858F058765E08D690A1917BC /* [CP] Embed Pods Frameworks */,
+				4CCB8AA8BB626C5AE884241B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -447,29 +447,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		8A9DC284B203B509D7DEF536 /* Embed Pods Frameworks */ = {
+		4CCB8AA8BB626C5AE884241B /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RealNews/Pods-RealNews-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		98D40EFD383B92E26A07C8DB /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -477,19 +462,34 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RealNews/Pods-RealNews-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		9DD638243BA53F650A9F6CDF /* Check Pods Manifest.lock */ = {
+		7FFE490E54B2816A70B3BD75 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		858F058765E08D690A1917BC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RealNews/Pods-RealNews-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -642,7 +642,7 @@
 		};
 		AC456F8617EA46B2007DF01C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0E7BCBE6142AE14A801061AB /* Pods-RealNews.debug.xcconfig */;
+			baseConfigurationReference = DA2ABF3477775C1CBAF65A8A /* Pods-RealNews.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -660,7 +660,7 @@
 		};
 		AC456F8717EA46B2007DF01C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2B75D49D2B2733F66D87C354 /* Pods-RealNews.release.xcconfig */;
+			baseConfigurationReference = 16F6D446DBA81C52C24684A4 /* Pods-RealNews.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;

@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '9A2414EBDC3535410D6DFDDD'
+               BlueprintIdentifier = '3CEA646F646668520E4BE2925499B0B9'
                BlueprintName = 'RSSAtomKit'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'libRSSAtomKit.a'>
