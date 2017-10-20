@@ -1,7 +1,7 @@
 PODS:
-  - Mantle (2.0.7):
-    - Mantle/extobjc (= 2.0.7)
-  - Mantle/extobjc (2.0.7)
+  - Mantle (2.1.0):
+    - Mantle/extobjc (= 2.1.0)
+  - Mantle/extobjc (2.1.0)
   - Ono (1.2.2)
   - RSSAtomKit (0.1.1):
     - Mantle (~> 2.0)
@@ -20,8 +20,10 @@ CHECKOUT OPTIONS:
     :git: https://github.com/chrisballinger/RSSAtomKit.git
 
 SPEC CHECKSUMS:
-  Mantle: bc40bb061d8c2c6fb48d5083e04d928c3b7f73d9
+  Mantle: 2fa750afa478cd625a94230fbf1c13462f29395b
   Ono: 80b1c686777d3f6d5d5ce6fcac8a74afef4ca197
   RSSAtomKit: 4c57701c961e044555e793283455b39e44ceeb9f
 
-COCOAPODS: 0.39.0
+PODFILE CHECKSUM: 0c059c6df7e1d0fa3ab060c6807d6d51a173d47a
+
+COCOAPODS: 1.2.0
